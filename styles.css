@@ -207,6 +207,11 @@ small {
     height: 1px;
 }
 
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
 .copyright {
     text-align: center;
     font-size: 14px;
