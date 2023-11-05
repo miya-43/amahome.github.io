@@ -17,7 +17,7 @@
                 <img src="images/logopng.png">
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li>
                         <a href="">Featured</a>
                         <a href="">Living Room</a>
@@ -27,7 +27,7 @@
                     </li>
                 </ul>
             </nav>
-            <img src="images/navbtn.png" class="menu-icon">
+            <img src="images/navbtn.png" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -161,13 +161,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="footer-col-1">
-                                <h3>Example Text</h3>
-                                <p> More exmplae text i guess</p>
+                                <h3>About this website</h3>
+                                <p> I've always enjoyed looking for products to decorete <br>
+                                    that's why I thought about making this page, so everyone is able to find what matches best to their style at the best price, with a simple way of buying such as Amazon!</p>
 
                             </div>
                             <div class="footer-col-2">
                                 <img src="images/logopng.png"">
-                                <p> More exmplae text i guess</p>
+                                <p>Made with love <i class="fa fa-heart" aria-hidden="true"></i></p>
                             </div>
                             <div class="footer-col-3">
                                 <h3>Useful Links</h3>
@@ -189,6 +190,24 @@
 
 </body>
 
+<!-- JS for toggle menu  -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 
 
 
