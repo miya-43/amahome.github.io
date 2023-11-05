@@ -133,9 +133,17 @@ p {
     padding-left: 10px;
 }
 
-.small-container p {
+#price-tag {
     padding-left: 10px;
 }
+
+#price-tag-propg {
+    padding-right: 1000px;
+}
+
+/* .small-container-fix p {
+    padding-left: 10px;
+} */
 
 .title {
     text-align: center;
@@ -155,6 +163,10 @@ p {
 .col-2 .offer-img {
     padding: 50px;
 
+}
+
+.col-2 h4 {
+    padding-left: 0px;
 }
 
 small {
