@@ -333,3 +333,16 @@ padding: 20px;
 }
 
 
+/* Gallery */
+
+.gallery-row {
+display: flex;
+justify-content: space-between;
+
+}
+
+.gallery-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
