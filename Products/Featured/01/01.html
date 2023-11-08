@@ -20,11 +20,11 @@
                 <nav>
                     <ul id="MenuItems">
                         <li>
-                            <a href="index.html">Featured</a>
-                            <a href="livingroom.html">Living Room</a>
-                            <a href="kitchen.html">Kitchen</a>
-                            <a href="bedroom.html">Bedroom</a>
-                            <a href="bathroom.html">Bathroom</a>
+                            <a href="../../../index.html">Featured</a>
+                            <a href="../../../livingroom.html">Living Room</a>
+                            <a href="../../../kitchen.html">Kitchen</a>
+                            <a href="../../../bedroom.html">Bedroom</a>
+                            <a href="../../../bathroom.html">Bathroom</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,26 +42,26 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="../01/Images/01.jpg" width="100%">
+                <img src="../01/Images/01.jpg" width="100%" id="ProductImg">
 
 
                 <!-- IMAGE GALLERY  -->
 
                 <div class="gallery-row">
                     <div class="gallery-col">
-                        <img src="../01/Images/01.jpg">
+                        <img src="../01/Images/01.jpg" width="100%" class="SmallImg">
                     </div>
                     <div class="gallery-col">
-                        <img src="../01/Images/02.jpg">
+                        <img src="../01/Images/02.jpg" width="100%" class="SmallImg">
                     </div>
                     <div class="gallery-col">
-                        <img src="../01/Images/03.jpg">
+                        <img src="../01/Images/03.jpg" width="100%" class="SmallImg">
                     </div>
                     <div class="gallery-col">
-                        <img src="../01/Images/04.jpg">
+                        <img src="../01/Images/04.jpg" width="100%" class="SmallImg">
                     </div>
                 </div>
-            </div>     
+            </div>
 
             <div class="col-2">
                 <p></p>
@@ -207,5 +207,33 @@
         }
     }
 </script>
+
+
+<!-- JS for gallery -->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+
+    SmallImg[0].onclick = function () 
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function () 
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function () 
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function () 
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+
+
 
 </html>
