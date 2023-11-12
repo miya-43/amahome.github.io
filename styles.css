@@ -151,7 +151,8 @@ p {
     position: relative;
     line-height: 60px;
     color: #1a8ed1;
-    text-decoration:underline 3px;
+    text-decoration:none 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .offer {
